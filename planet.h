@@ -70,7 +70,6 @@
 // Global variables used both within and outside of planet.h
 //
 extern double M;                     // sea level
-extern planet_vertex tetra[4];       // global tetrahedron vertices
 extern double rseed;                 // The main seed need for generation
 
 // calculation variables internal to planet.h
@@ -149,6 +148,8 @@ typedef struct planet_vertex
   double x,y,z; /* coordinates */
   double shadow; /* approximate rain shadow */
 } planet_vertex;
+
+extern planet_vertex tetra[4];       // global tetrahedron vertices
 
 typedef struct planet_climate
 {
